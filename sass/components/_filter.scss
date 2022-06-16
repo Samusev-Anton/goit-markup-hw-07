@@ -1,0 +1,40 @@
+.project {
+    padding-top: 174px;
+}
+.button {
+    @extend %button;
+    &:hover,
+        &:focus {
+            background-color: $accent-color;
+            color: $white;
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
+}
+
+.button-all {
+        @extend %button;
+    background-color: $accent-color;
+    color: $white;
+    box-shadow: none;
+    transition: background-color $time-transition $cubik,
+        color $time-transition $cubik,
+        box-shadow $time-transition $cubik;
+        &:hover,
+            &:focus {
+                background-color: #f5f4fa;
+                color: $primary-text-color;
+                box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+                    0px 2px 2px rgba(0, 0, 0, 0.12);
+            }
+}
+
+
+.filter {
+    display: flex;
+    justify-content: center;
+}
+
+.filter__item:not(first-child) {
+    margin-left: 8px;
+}

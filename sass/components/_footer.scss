@@ -1,0 +1,144 @@
+.footer {
+    background: $black-back;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__conteiner {
+    display: flex;
+    background: $black-back;
+    align-items: baseline;
+}
+
+/* блок контактов */
+
+.footer__logo {
+    display: block;
+    margin-bottom: 20px;
+    color: $white;
+    padding: 0;
+}
+
+.footer-address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-address__map {
+    color: $white;
+    transition: color $time-transition $cubik;
+}
+
+.footer-address__email,
+.footer-address__tel {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color $time-transition $cubik;
+}
+
+.footer-address__link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+}
+
+
+/* присоединение к соцсетям-футер */
+.socialnetwork__text {
+    margin-bottom: 20px;
+    color: $white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.socialnetwork__item:not(:first-child) {
+    margin-left: 10px;
+}
+
+.socialnetwork__list {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-socialnetwork {
+    margin-left: 70px;
+}
+
+.socialnetwork__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color $time-transition $cubik;
+    &:hover,
+        &:focus {
+            background-color: $accent-color;
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
+}
+
+
+.socialnetwork__icon {
+    width: 20px;
+    height: 20px;
+    fill: $white;
+}
+
+/* форма футер */
+.footer-action {
+    margin-left: 93px;
+}
+
+.footer-action__text {
+    margin-bottom: 20px;
+    color: $white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.footer-action__form {
+    display: flex;
+}
+
+.footer-action__input {
+    width: 358px;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: $black-back;
+    color: $white;
+    margin-right: 12px;
+    &::placeholder {
+            color: $white;
+        }
+}
+
+
+.button-action {
+    @extend %button;
+    display: flex;
+    align-items: center;
+    padding: 10px 29px;
+    color: $white;
+    background-color: $accent-color;
+}
+
+.button-action__icon {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    fill: $white;
+}
