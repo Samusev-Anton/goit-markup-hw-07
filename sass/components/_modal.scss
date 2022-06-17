@@ -19,18 +19,18 @@
     pointer-events: none;
 }
 
-.modal {
-    width: 528px;
-    height: avto;
+.form-wrapper {
     position: relative;
-    top: 430px;
-    left: 50%;
-    opacity: 1;
-    transform: scale(1) translate(-50%, -50%);
-    background-color: $white;
-    transition: scale $time-transition $cubik,
-        opacity $time-transition $cubik;
-    z-index: 999;
+        width: 528px;
+            height: avto;
+            top: 430px;
+            left: 50%;
+            opacity: 1;
+            transform: scale(1) translate(-50%, -50%);
+            background-color: $white;
+            transition: scale $time-transition $cubik,
+                opacity $time-transition $cubik;
+            z-index: 999;
 }
 
 .modal-close {
@@ -51,9 +51,10 @@
     width: 18px;
     height: 18px;
     fill: currentColor;
+
     .modal-close:hover & {
-            fill: $accent-color;
-        }
+        fill: $accent-color;
+    }
 }
 
 .form-area {
@@ -68,8 +69,9 @@
     letter-spacing: 0.03em;
 }
 
-.form-area__wrapper {
+.form-area__field {
     position: relative;
+    display: block;
     margin-bottom: 10px;
 }
 
@@ -110,7 +112,7 @@
     display: inline-block;
     transform: translateY(-50%);
     left: 15px;
-    top: 24px;
+    top: 42px;
     width: 18px;
     height: 18px;
     fill: black;
@@ -155,7 +157,8 @@
 
 .checkbox {
     display: flex;
-    align-items: center;
+    align-items:center;
+    justify-content: center;
     width: 100%;
     font-weight: 400;
     font-size: 14px;
@@ -166,17 +169,10 @@
 }
 
 .checkbox__input {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-}
+@extend visually-hidden}
 
 .checkbox__icon {
-    display: inline-block;
+    display: block;
     width: 15px;
     height: 15px;
     border: 2px solid black;

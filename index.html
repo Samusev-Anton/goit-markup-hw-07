@@ -72,19 +72,19 @@
           </button>
           <!-- модпльное окно -->
           <div class="backdrop is-hidden" data-modal>
-            <form class="modal">
+            <div class="form-wrapper">
               <button class="modal-close" data-modal-close>
                 <svg class="modal-close__icon">
                   <use href="./img/symbol-modals.svg#icon-close-black"></use>
                 </svg>
               </button>
-              <div class="form-area">
-                <p class="form-area__title">
-                  Оставьте свои данные, мы вам перезвоним
-                </p>
-                <label class="form-area__field">
-                  <span class="form-area__label">Имя</span>
-                  <div class="form-area__wrapper">
+              <form class="modal">
+                <div class="form-area">
+                  <p class="form-area__title">
+                    Оставьте свои данные, мы вам перезвоним
+                  </p>
+                  <label class="form-area__field">
+                    <span class="form-area__label">Имя</span>
                     <input
                       type="text"
                       class="form-area__input"
@@ -96,11 +96,9 @@
                         href="./img/symbol-modals.svg#icon-person-black"
                       ></use>
                     </svg>
-                  </div>
-                </label>
-                <label class="form-area__field">
-                  <span class="form-area__label">Телефон</span>
-                  <div class="form-area__wrapper">
+                  </label>
+                  <label class="form-area__field">
+                    <span class="form-area__label">Телефон</span>
                     <input
                       type="tel"
                       class="form-area__input"
@@ -112,11 +110,9 @@
                         href="./img/symbol-modals.svg#icon-phone-black"
                       ></use>
                     </svg>
-                  </div>
-                </label>
-                <label class="form-area__field">
-                  <span class="form-area__label">Почта</span>
-                  <div class="form-area__wrapper">
+                  </label>
+                  <label class="form-area__field">
+                    <span class="form-area__label">Почта</span>
                     <input
                       type="email"
                       class="form-area__input"
@@ -128,29 +124,33 @@
                         href="./img/symbol-modals.svg#icon-email-black"
                       ></use>
                     </svg>
-                  </div>
-                </label>
-                <label class="form-comment" for="comment">Комментарий</label>
-                <textarea
-                  class="form-comment__textarea"
-                  name="comment"
-                  id="comment"
-                  placeholder="Оставьте комментарий"
-                ></textarea>
-                <label class="checkbox">
-                  <input class="checkbox__input" type="checkbox" name="topic" />
-                  <svg class="checkbox__icon">
-                    <use href="./img/symbol-modals.svg#icon-icon-check"></use>
-                  </svg>
-                  Соглашаюсь с рассылкой и принимаю
-                  <a class="checkbox__link" href=""> Условия договора</a>
-                </label>
-                <button type="submit" class="send-button button">
-                  Отправить
-                </button>
-              </div>
-              <!-- оформление модалки -->
-            </form>
+                  </label>
+                  <label class="form-comment" for="comment">Комментарий</label>
+                  <textarea
+                    class="form-comment__textarea"
+                    name="comment"
+                    id="comment"
+                    placeholder="Оставьте комментарий"
+                  ></textarea>
+                  <label class="checkbox">
+                    <input
+                      class="checkbox__input"
+                      type="checkbox"
+                      name="topic"
+                    />
+                    <svg class="checkbox__icon">
+                      <use href="./img/symbol-modals.svg#icon-icon-check"></use>
+                    </svg>
+                    Соглашаюсь с рассылкой и принимаю
+                    <a class="checkbox__link" href=""> Условия договора</a>
+                  </label>
+                  <button type="submit" class="send-button button">
+                    Отправить
+                  </button>
+                </div>
+                <!-- оформление модалки -->
+              </form>
+            </div>
           </div>
         </div>
       </section>
