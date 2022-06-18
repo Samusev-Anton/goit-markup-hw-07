@@ -12,8 +12,7 @@
 }
 
 .prodaction__list {
-    display: flex;
-    justify-content: center;
+@extend %justify;
 }
 
 .prodaction__item:not(:first-child) {

@@ -12,20 +12,14 @@
 }
 
 .headline {
-    display: flex;
-    align-items: center;
-    background: $white;
+    @extend %aline;
+        background: $white;
 }
 
 /* LOGO */
 
 .logo {
-    color: $primary-text-color;
-    font-family: "Raleway";
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
+    @extend %logo;
     padding: 24px 0;
 }
 
@@ -36,8 +30,7 @@
 /* NAVIGATION */
 .contact-pages__link,
 .navi-pages__link {
-    display: flex;
-    align-items: center;
+    @extend %aline;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;

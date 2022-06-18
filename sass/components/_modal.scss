@@ -34,9 +34,7 @@
 }
 
 .modal-close {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %aline-justify;
     position: absolute;
     width: 30px;
     height: 30px;
@@ -156,10 +154,8 @@
 
 
 .checkbox {
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    width: 100%;
+    @extend %aline-justify;
+        width: 100%;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -169,7 +165,8 @@
 }
 
 .checkbox__input {
-@extend visually-hidden}
+@extend %visually-hidden;
+}
 
 .checkbox__icon {
     display: block;
@@ -198,12 +195,9 @@
 }
 
 .send-button {
-    @extend %button;
-    background-color: $accent-color;
-    color: $white;
+    @extend %second-button;
     padding: 10px 55px;
     min-width: 200px;
-    border: none;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
 }

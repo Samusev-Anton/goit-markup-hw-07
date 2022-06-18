@@ -7,9 +7,7 @@
 }
 
 .skills__blockicon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@extend %aline-justify;
     height: 120px;
     background-color: #f5f4fa;
     margin-bottom: 30px;

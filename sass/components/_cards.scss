@@ -45,12 +45,12 @@
     padding: 63px 24px;
     transform: translateY(100%);
     transition: transform $time-transition $cubik;
+    .cards__link:hover &,
+        .cards__link:focus & {
+            transform: translateY(0);
+        }
 }
 
-.cards__link:hover .cards-thumb__hover,
-.cards__link:focus .cards-thumb__hover {
-    transform: translateY(0);
-}
 
 .cards__link {
     display: block;
@@ -71,12 +71,6 @@
 
 .cards__item:nth-child(n + 7) {
     margin-bottom: 0;
-}
-
-.cards-thumb__image {
-    display: block;
-    width: 100%;
-    height: auto;
 }
 
 .cards-thumb__footnote {

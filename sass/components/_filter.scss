@@ -3,6 +3,7 @@
 }
 .button {
     @extend %button;
+    box-shadow: none;
     &:hover,
         &:focus {
             background-color: $accent-color;
@@ -13,13 +14,10 @@
 }
 
 .button-all {
-        @extend %button;
+        @extend %second-button;
     background-color: $accent-color;
     color: $white;
     box-shadow: none;
-    transition: background-color $time-transition $cubik,
-        color $time-transition $cubik,
-        box-shadow $time-transition $cubik;
         &:hover,
             &:focus {
                 background-color: #f5f4fa;
@@ -31,8 +29,7 @@
 
 
 .filter {
-    display: flex;
-    justify-content: center;
+@extend %justify;
 }
 
 .filter__item:not(first-child) {
